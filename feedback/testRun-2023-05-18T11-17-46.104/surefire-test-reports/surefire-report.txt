@@ -1,0 +1,120 @@
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.696 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+shouldReturnUnauthorized  Time elapsed: 0.077 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnUnauthorized(StudentResourceTest.java:116)
+Caused by: javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnUnauthorized(StudentResourceTest.java:112)
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnUnauthorized(StudentResourceTest.java:112)
+Caused by: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnUnauthorized(StudentResourceTest.java:112)
+
+shouldDeleteStudent  Time elapsed: 1.086 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <403>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldDeleteStudent(StudentResourceTest.java:181)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 36.232 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+shouldFindThesisByStudent  Time elapsed: 2.692 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByStudent(ThesisResourceTest.java:571)
+Caused by: java.lang.ClassCastException: sk.stuba.fei.uim.vsa.pr2.model.dto.response.ThesisResponse cannot be cast to java.util.List
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByStudent(ThesisResourceTest.java:546)
+
+shouldCreateThesis  Time elapsed: 1.091 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <FEI-a8f87a61c70a4739b6943ac0b8e8032c> but was: <FEI-3>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCreateThesis(ThesisResourceTest.java:41)
+
+shouldReturnUnauthorized  Time elapsed: 0.084 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldReturnUnauthorized(ThesisResourceTest.java:169)
+Caused by: javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldReturnUnauthorized(ThesisResourceTest.java:165)
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldReturnUnauthorized(ThesisResourceTest.java:165)
+Caused by: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldReturnUnauthorized(ThesisResourceTest.java:165)
+
+shouldFindThesisByTeacher  Time elapsed: 1.634 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <FEI-a8f87a61c70a4739b6943ac0b8e8032c> but was: <FEI-4>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByTeacher(ThesisResourceTest.java:504)
+
+shouldAssignThesisWithStudent  Time elapsed: 2.711 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <FEI-a8f87a61c70a4739b6943ac0b8e8032c> but was: <FEI-5>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithStudent(ThesisResourceTest.java:338)
+
+shouldGetThesis  Time elapsed: 1.58 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <FEI-a8f87a61c70a4739b6943ac0b8e8032c> but was: <FEI-6>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetThesis(ThesisResourceTest.java:204)
+
+shouldAssignThesisWithTeacher  Time elapsed: 2.095 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <FEI-a8f87a61c70a4739b6943ac0b8e8032c> but was: <FEI-7>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithTeacher(ThesisResourceTest.java:298)
+
+shouldCallDeleteThesisWithAnotherTeacher  Time elapsed: 2.101 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <200>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallDeleteThesisWithAnotherTeacher(ThesisResourceTest.java:263)
+
+shouldCallFindThesesWithEmptyCriteria  Time elapsed: 1.636 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <500>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithEmptyCriteria(ThesisResourceTest.java:585)
+
+shouldCreateThesisWithOnlyRequiredProperties  Time elapsed: 1.082 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <FEI-a8f87a61c70a4739b6943ac0b8e8032c> but was: <FEI-10>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCreateThesisWithOnlyRequiredProperties(ThesisResourceTest.java:80)
+
+shouldSubmitThesisWithStudent  Time elapsed: 2.689 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <IN_PROGRESS> but was: <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithStudent(ThesisResourceTest.java:420)
+
+shouldSubmitThesisWithTeacher  Time elapsed: 2.137 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <IN_PROGRESS> but was: <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacher(ThesisResourceTest.java:372)
+
+shouldDeleteThesis  Time elapsed: 1.59 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <FEI-a8f87a61c70a4739b6943ac0b8e8032c> but was: <FEI-14>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldDeleteThesis(ThesisResourceTest.java:248)
+
+shouldCallFindThesesWithWrongCriteria  Time elapsed: 1.631 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <200>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithWrongCriteria(ThesisResourceTest.java:624)
+
+shouldSubmitThesisWithTeacherAndWithWrongStudent  Time elapsed: 2.098 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <IN_PROGRESS> but was: <null>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacherAndWithWrongStudent(ThesisResourceTest.java:466)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.398 s - in sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.791 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+deleteTeacher  Time elapsed: 1.063 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <403>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.deleteTeacher(TeacherResourceTest.java:181)
+
+shouldReturnUnauthorized  Time elapsed: 0.099 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnUnauthorized(TeacherResourceTest.java:116)
+Caused by: javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnUnauthorized(TeacherResourceTest.java:112)
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnUnauthorized(TeacherResourceTest.java:112)
+Caused by: java.lang.IllegalArgumentException: invalid start or end
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnUnauthorized(TeacherResourceTest.java:112)
+
+---------------------------------------------------------------------
+ 

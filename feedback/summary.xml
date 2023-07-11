@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><evaluation>
+  <exam>b-vsa-ls23-projekt-2</exam>
+  <student>
+    <aisId>111486</aisId>
+    <name>Patrik Vinčur</name>
+    <email>xvincur@stuba.sk</email>
+    <github>PatrikVincur111486</github>
+  </student>
+  <testRuns>
+    <testRun>
+      <id>testRun-2023-05-18T11-17-46.104</id>
+      <totalRun>45</totalRun>
+      <success>26</success>
+      <failure>19</failure>
+      <error>0</error>
+      <skipped>0</skipped>
+      <points>9</points>
+      <bonus>false</bonus>
+      <duration>PT1M24.628S</duration>
+    </testRun>
+    <testRun>
+      <id>testRun-2023-05-18T11-19-10.736</id>
+      <totalRun>3</totalRun>
+      <success>0</success>
+      <failure>0</failure>
+      <error>0</error>
+      <skipped>3</skipped>
+      <points>0</points>
+      <bonus>true</bonus>
+      <duration>PT11.356S</duration>
+    </testRun>
+  </testRuns>
+  <totalPoints>9</totalPoints>
+  <notes/>
+  <testDuration>PT1M35.984S</testDuration>
+</evaluation>
